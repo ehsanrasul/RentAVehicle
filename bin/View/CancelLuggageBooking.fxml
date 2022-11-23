@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CancelLuggageBookingController">
+   <children>
+      <AnchorPane prefHeight="552.0" prefWidth="621.0" style="-fx-background-color: #bdd4d1;">
+         <children>
+            <ImageView fitHeight="552.0" fitWidth="621.0" layoutX="2.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="D:\eclipse\workplace\SDA_final\Res\Car3.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="100.0" prefWidth="623.0" style="-fx-background-color: TEAL;">
+               <children>
+                  <Text layoutX="33.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VMS">
+                     <font>
+                        <Font name="Elephant Italic" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text layoutX="22.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Booking">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="110.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your Booking ID:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ID" layoutX="278.0" layoutY="198.0" promptText="Booking ID" />
+            <Button fx:id="cancel" layoutX="327.0" layoutY="251.0" mnemonicParsing="false" onAction="#cancelLuggageBooking" text="Cancel" />
+            <Button fx:id="Back" layoutX="62.0" layoutY="474.0" mnemonicParsing="false" onAction="#goToCustomerHomePage" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

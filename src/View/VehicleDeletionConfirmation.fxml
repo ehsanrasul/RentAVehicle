@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.VehicleDeletionConfirmationController">
+   <children>
+      <AnchorPane prefHeight="562.0" prefWidth="647.0" style="-fx-background-color: #bdd4d1;" />
+      <AnchorPane layoutX="10.0" layoutY="4.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.42" prefHeight="552.0" prefWidth="637.0" style="-fx-background-color: #bdd4d1;">
+         <children>
+            <AnchorPane layoutX="-12.0" layoutY="76.0" prefHeight="478.0" prefWidth="211.0" style="-fx-background-color: white; -fx-border-color: #bdd4d1;">
+               <children>
+                  <Button layoutX="2.0" layoutY="25.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #bdd4d1;" text="Manage Vehicles" textAlignment="RIGHT" />
+                  <Button layoutX="2.0" layoutY="78.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #bdd4d1;" text="Renting Requests" />
+                  <Button layoutX="1.0" layoutY="128.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="207.0" style="-fx-background-color: #bdd4d1;" text="Driver Requests" />
+                  <Button layoutX="2.0" layoutY="179.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="207.0" style="-fx-background-color: #bdd4d1;" text="Add Discount" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-12.0" layoutY="-4.0" opacity="0.29" prefHeight="82.0" prefWidth="653.0" style="-fx-background-color: TEAL;">
+               <children>
+                  <Text layoutX="66.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VMS">
+                     <font>
+                        <Font name="Elephant Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="592.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="49.49609375" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="238.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle ID:" />
+            <TextField layoutX="304.0" layoutY="182.0" prefHeight="25.0" prefWidth="233.0" promptText="Vehicle_ID" />
+            <Button layoutX="364.0" layoutY="232.0" mnemonicParsing="false" text="Delete" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="153.0" layoutY="181.0" prefHeight="124.0" prefWidth="355.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;">
+         <children>
+            <Text layoutX="53.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are You Sure You Want to Delete the Vehicle?">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="NO" layoutX="294.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToDeleteVehicleScreen" prefHeight="25.0" prefWidth="43.0" text="NO" />
+            <Button fx:id="YES" layoutX="236.0" layoutY="85.0" mnemonicParsing="false" onAction="#deleteVehicle" prefHeight="25.0" prefWidth="49.0" text="YES" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

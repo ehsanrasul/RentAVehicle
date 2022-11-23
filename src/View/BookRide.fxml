@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.BookARideController">
+   <children>
+      <AnchorPane prefHeight="552.0" prefWidth="637.0" style="-fx-background-color: #bdd4d1;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="126.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="561.0" fitWidth="653.0" layoutX="-14.0" layoutY="-7.0" opacity="0.4">
+               <image>
+                  <Image url="D:\eclipse\workplace\SDA_final\Res\Car3.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-2.0" layoutY="-8.0" prefHeight="100.0" prefWidth="644.0" style="-fx-background-color: TEAL;">
+               <children>
+                  <Text layoutX="33.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VMS">
+                     <font>
+                        <Font name="Elephant Italic" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text layoutX="30.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Booking Details">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="145.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking ID:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="145.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="145.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick-up Location:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="145.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drop-off Location:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ID" layoutX="273.0" layoutY="207.0" prefHeight="25.0" prefWidth="220.0" promptText="Booking ID" />
+            <Button fx:id="Book" layoutX="340.0" layoutY="359.0" mnemonicParsing="false" onAction="#bookRide" text="Book" />
+            <TextField fx:id="vehicleType" layoutX="273.0" layoutY="243.0" prefHeight="25.0" prefWidth="220.0" promptText="Loader" />
+            <TextField fx:id="pickupLocation" layoutX="273.0" layoutY="277.0" prefHeight="25.0" prefWidth="220.0" promptText="I8 Markaz Islamabad " />
+            <TextField fx:id="dropoffLocation" layoutX="273.0" layoutY="307.0" prefHeight="25.0" prefWidth="220.0" promptText="i9 Markaz Islamabad" />
+            <Button fx:id="Back" layoutX="30.0" layoutY="500.0" mnemonicParsing="false" onAction="#goToCustomerHomePage" prefHeight="25.0" prefWidth="66.0" text="Back" />
+            <Text fx:id="message" layoutX="249.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.00000035762787" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

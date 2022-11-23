@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="566.0" prefWidth="639.0" style="-fx-background-color: #bdd4d1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.UpdateVehicleController">
+   <children>
+      <AnchorPane layoutY="-5.0" prefHeight="93.0" prefWidth="654.0" style="-fx-background-color: teal;">
+         <children>
+            <AnchorPane layoutY="6.0" prefHeight="82.0" prefWidth="643.0" style="-fx-background-color: TEAL;">
+               <children>
+                  <Text layoutX="66.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VMS">
+                     <font>
+                        <Font name="Elephant Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="592.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="49.49609375" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutY="102.0" prefHeight="446.0" prefWidth="151.0" style="-fx-background-color: white;" />
+      <Text layoutX="356.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update a vehicle" textAlignment="CENTER" wrappingWidth="194.80340576171875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="vehicleID" layoutX="325.0" layoutY="137.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <Text layoutX="273.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="282.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="268.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Type" />
+      <Text layoutX="271.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" />
+      <Text layoutX="274.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+      <Text layoutX="275.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body" />
+      <Text layoutX="271.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine" />
+      <TextField fx:id="vehicleName" layoutX="325.0" layoutY="225.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <TextField fx:id="vehicleModel" layoutX="325.0" layoutY="311.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <TextField fx:id="vehicleType" layoutX="325.0" layoutY="266.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <TextField fx:id="vehicleColor" layoutX="325.0" layoutY="350.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <TextField fx:id="vehicleBody" layoutX="325.0" layoutY="390.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <TextField fx:id="vehicleEngine" layoutX="325.0" layoutY="431.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <Button fx:id="update" layoutX="401.0" layoutY="510.0" mnemonicParsing="false" onAction="#updateVehicle" prefHeight="25.0" prefWidth="81.0" text="UPDATE" />
+      <AnchorPane layoutX="-2.0" layoutY="88.0" prefHeight="478.0" prefWidth="211.0" style="-fx-background-color: white; -fx-border-color: #bdd4d1;">
+         <children>
+            <Button fx:id="Home" layoutX="2.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #bdd4d1;" text="Home" textAlignment="RIGHT" />
+            <Button fx:id="RentingRequests" layoutX="2.0" layoutY="78.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #bdd4d1;" text="Renting Requests" />
+            <Button fx:id="DriverRequests" layoutX="1.0" layoutY="128.0" mnemonicParsing="false" onAction="#goToDriverRecruitmentScreen" prefHeight="31.0" prefWidth="207.0" style="-fx-background-color: #bdd4d1;" text="Driver Requests" />
+            <Button fx:id="AddDiscounts" layoutX="2.0" layoutY="179.0" mnemonicParsing="false" onAction="#goToAddDiscountScreen" prefHeight="31.0" prefWidth="207.0" style="-fx-background-color: #bdd4d1;" text="Add Discount" />
+            <Button fx:id="logout" layoutX="1.0" layoutY="224.0" mnemonicParsing="false" onAction="#goToMenuScreen" prefHeight="31.0" prefWidth="207.0" style="-fx-background-color: #bdd4d1;" text="Logout" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="rentAmount" layoutX="325.0" layoutY="477.0" opacity="0.7" prefHeight="25.0" prefWidth="256.0" />
+      <Text layoutX="248.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Amount" />
+      <Button fx:id="checkVehicle" layoutX="408.0" layoutY="176.0" mnemonicParsing="false" onAction="#checkVehicle" text="Check Vehicle" />
+      <Text fx:id="message2" layoutX="361.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="182.13671875" />
+      <Text fx:id="message" layoutX="344.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="194.80340415239334" />
+   </children>
+</AnchorPane>
